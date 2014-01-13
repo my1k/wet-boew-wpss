@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Wet-boew-wpss by my1k</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Wet-boew-wpss</h1>
+        <p>The WPSS Validation Tool enables web developers and quality assurance testers to perform a number of web site and page validation tasks at one time. The tool crawls a site to find all of the documents then analyses each document with a number of validation tools.</p>
+
+        <p class="view"><a href="https://github.com/my1k/wet-boew-wpss">View the Project on GitHub <small>my1k/wet-boew-wpss</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/my1k/wet-boew-wpss/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/my1k/wet-boew-wpss/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/my1k/wet-boew-wpss">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="wpss-validation-tool-version-401" class="anchor" href="#wpss-validation-tool-version-401"><span class="octicon octicon-link"></span></a>WPSS Validation Tool version 4.0.1</h1>
+
+<p>The WPSS Validation Tool provides web developers and quality assurance testers the ability to perform a number of web site and web page validation tasks at one time. The tool crawls a site to find all of the documents then analyses each document with a number of validation tools.</p>
+
+<p>Version 4.0.1 contains the following updates and additions</p>
+
+<ul>
+<li>Add open data checking tool (open_data_check.pl and desktop shortcut)  to check open dataset files (dictionary, data, resources).</li>
+<li>Do case insensitive checks on titles to find matching HTML and PDF versions of a document.</li>
+<li>Allow for binary data in CSV files (e.g. new-line in the cell content).</li>
+<li>Report Interoperability failure for web feeds that do not parse properly - SWI_B.</li>
+<li>Check for table headers that reference undefined headers or headers outside the current table - WCAG_2.0-H43.</li>
+<li>Check for all language markers to determine if a page is archived or not (handles the case where wrong language message is used).</li>
+<li>Encode text that is written to results tabs, this eliminates garbled French characters.</li>
+<li>Report unknown mime-type documents as non-HTML primary format.</li>
+<li>Accept enter key in URL list tab to move to the next input line.</li>
+<li>Check for very long (&gt; 500 characters) title and heading text - WCAG_2.0-H42, WCAG_2.0-H25</li>
+<li>Don't report zoom failure for fix size fonts as current browsers can handle this - WCAG_2.0-G142</li>
+<li>Decode HTML entities before checking the length of titles and headings to eliminate the length of the HTML code from the actual text length.</li>
+</ul><p>Reminder: The WPSS Tool DOES NOT validate HTML5 markup.</p>
+
+<h1>
+<a name="wpss_tool-installer" class="anchor" href="#wpss_tool-installer"><span class="octicon octicon-link"></span></a>WPSS_Tool Installer</h1>
+
+<p>The tool installer, WPSS_Tool.exe, does NOT include the required Perl or Python installers (as was the case for previous releases).  Perl and Python must be installed on the workstation prior to installing the WPSS_Tool.</p>
+
+<p>Supported versions of Perl include</p>
+
+<ul>
+<li>ActiveState Perl 5.14 (does not support 5.16)</li>
+<li>Strawberry Perl 5.18 (32 bit) available from <a href="http://strawberry-perl.googlecode.com/files/strawberry-perl-5.18.1.1-32bit.msi">http://strawberry-perl.googlecode.com/files/strawberry-perl-5.18.1.1-32bit.msi</a>
+</li>
+</ul><p>Supported versions of Python include</p>
+
+<ul>
+<li>Python 2.7.3</li>
+<li>Python 2.7.6 available from <a href="http://python.org/ftp/python/2.7.6/python-2.7.6.msi">http://python.org/ftp/python/2.7.6/python-2.7.6.msi</a>
+</li>
+</ul><p>The WPSS_Tool has been tested on the following platforms</p>
+
+<ul>
+<li>Windows XP (32 bit), ActiveState Perl 5.14, Python 2.7.3</li>
+<li>Windows XP (32 bit), Strawberry Perl 5.18, Python 2.7.3</li>
+<li>Windows XP (32 bit), Strawberry Perl 5.18, Python 2.7.6</li>
+<li>Windows 7 (64 bit), Strawberry Perl 5.18 (32 bit), Python 2.7.3</li>
+</ul><p>The WPSS Tool installer is available as a release in this repository</p>
+
+<ul>
+<li><a href="https://github.com/wet-boew/wet-boew-wpss/releases/download/4.0.1/WPSS_Tool.exe">https://github.com/wet-boew/wet-boew-wpss/releases/download/4.0.1/WPSS_Tool.exe</a></li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/my1k">my1k</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
